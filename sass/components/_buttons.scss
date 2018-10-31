@@ -1,0 +1,71 @@
+$button-size: 40px;
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1;
+    font-style: normal;
+    font-family: $general-font;
+    color: $white;
+    text-align: center;
+    vertical-align: middle;
+    height: $button-size;
+    width: $button-size;
+    border-radius: $border-radius-btn;
+    background-color: $grey-5;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-left: 15px; 
+}
+
+.btn--large {
+    height: 55px;
+    width: 165px;
+    margin: 25px 0 25px 0;
+}
+.btn__orange {
+    background-color: $orange;
+}
+
+
+.btn:hover,
+.btn:active {
+    color: $white;
+    background-color: $grey-3;
+    outline: none;
+}
+
+.btn--close {
+    background-color: inherit;
+}
+
+.btn__orange:hover,
+.btn__orange:active {
+    background-color: $orange-light;
+}
+
+.btn--disabled,
+.btn--disabled:hover,
+    {
+    background-color: $grey-2; 
+    cursor: not-allowed;
+}
+
+.btn_save {
+    width: 100px;
+}
+
+.btn__right {
+   margin-right: 18px;
+}
+
+.btn__disable {
+    background-color: $grey-10;
+    cursor: none;
+    width: 15%;
+    margin-left: 18px;
+}
+
+.btn__disable:hover {
+    background-color:  $grey-10;
+}
