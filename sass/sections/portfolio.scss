@@ -1,0 +1,14 @@
+.portfolio {
+  background-color: lightgray;
+  height: 550px;
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  .portfolio__text {
+    margin: 120px 0 30px;
+  }
+}
