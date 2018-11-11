@@ -1,0 +1,115 @@
+.about {
+  background-color: white;
+  margin: 0 auto;
+  height: 1700px;
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 980px;
+    border: 1px solid green;
+    top: 435px;
+  }
+
+  .about__text {
+    margin: 140px 0 30px;
+
+    .about__text-para {
+      padding: 5px 0;
+      font-family: 'Indie Flower', cursive;
+    }
+
+    .about__text-para--large {
+      font-family: 'Roboto';
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+
+  .about_date {
+    padding: 10px 10px 10px 0;
+    position: relative;
+    overflow: hidden;
+    width: 52%;
+    height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .about_date--left {
+    margin-left: 5%;
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .about_date--right {
+    margin-right: 5%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+
+  .about_date--center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about_date-text {
+    height: 100%;
+    width: 70%;
+    margin: 0 5px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+
+    .about_date-text-para {
+      padding: 5px 0;
+      font-family: 'Roboto';
+      font-size: 14px;
+      width: 70%;
+    }
+
+    .about_date-text-para--large {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .about_date-text--right {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .about_date-circle {
+    margin: 0 0 0 8px;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: green;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .about_date-text-center {
+      color: white;
+      font-size: 18px;
+      padding: 3px 0;
+    }
+  }
+}
