@@ -1,65 +1,80 @@
 .menu-container {
-  background-color: red;
   height: 700px;
-}
+  width: 1400px;
 
-.top-menu {
-  display: flex;
-  align-content: center;
-  height: 120px;
-  justify-content: space-between;
-
-  .top-menu__logo {
-    margin-left: 250px;
-    font-family: 'Indie Flower', cursive;
-    color: $yell;
-    font-size: 36px;
-    line-height: 120px;
+  &::before {
+    content: "";
+    z-index: -1;
+    background-image: url(/images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    filter: opacity(30%);
+    height: 700px;
+    width: 1400px;
+    position: absolute;
   }
 
-  .top-menu__nav {
+  .top-menu {
     display: flex;
-    float: left;
-    align-items: center;
-    margin-right: 200px;
-    font-size: 18px;
+    align-content: center;
+    height: 120px;
+    justify-content: space-between;
+    z-index: 2;
 
-    .top-menu__list {
-      list-style-type: none;
+    .top-menu__logo {
+      margin-left: 250px;
+      font-family: $second-font;
+      color: $yell;
+      font-size: 36px;
+      line-height: 120px;
+      z-index: 2;
+    }
+
+    .top-menu__nav {
       display: flex;
-      flex-direction: row;
+      float: left;
+      align-items: center;
+      margin-right: 200px;
+      font-size: 18px;
 
-      .top-menu__item {
-        color: $white;
-        padding: 0 18px;
-        cursor: pointer;
-        height: 50px;
-        line-height: 50px;
+      .top-menu__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
 
-        &:hover {
-          background-color: rgba(192, 192, 192, 0.3);
-          color: $yell;
+        .top-menu__item {
+          color: $white;
+          padding: 0 18px;
+          cursor: pointer;
+          height: 50px;
+          line-height: 50px;
+
+          &:hover {
+            background-color: rgba(192, 192, 192, 0.3);
+            color: $yell;
+          }
         }
       }
     }
   }
-}
 
-.menu-text-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 520px;
+  .menu-text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
 
-  .menu-text__para {
-    font-size: 40px;
-    color: white;
-    margin: 20px 0;
-  }
+    .menu-text__para {
+      font-size: 40px;
+      color: white;
+      margin: 20px 0;
+    }
 
-  .menu-text__para--large {
-    font-size: 55px;
-    font-weight: bold;
+    .menu-text__para--large {
+      font-size: 55px;
+      font-weight: bold;
+    }
   }
 }

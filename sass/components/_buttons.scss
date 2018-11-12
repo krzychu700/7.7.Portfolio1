@@ -23,8 +23,16 @@ $button-size: 40px;
     width: 165px;
     margin: 25px 0 25px 0;
 }
+
+.btn--form {
+    height: 65px;
+    width: 250px;
+    margin: 13px 0;
+    font-size: 20px;
+}
+
 .btn__orange {
-    background-color: $orange;
+    background-color: $gold-1;
 }
 
 

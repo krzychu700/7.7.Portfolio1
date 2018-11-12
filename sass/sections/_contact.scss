@@ -1,0 +1,53 @@
+.contact {
+  background-image: url("/images/img15.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  height: 675px;
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  .contact_text {
+    color: white;
+    margin-top: 85px;
+
+    .contact__text-para {
+      padding: 10px 0;
+      font-size: 28px;
+      font-family: $second-font;
+    }
+
+    .contact__text-para--large {
+      font-size: 45px;
+      font-weight: bold;
+      font-family: $general-font;
+      color: $white;
+    }
+  }
+
+  .contact__form {
+    display: flex;
+    margin-top: 20px;
+
+    .contact__form-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: 30px;
+      width: 460px;
+    }
+
+    .contact__form-message {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 460px;
+    }
+  }
+}

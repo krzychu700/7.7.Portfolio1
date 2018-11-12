@@ -1,9 +1,7 @@
 $sidebar-width: 200px;
 $top-menu-height: 60px;
 $general-margin: 18px;
-// $font-stack-base: 'Roboto', sans-serif !default; // Declared in normalize/variables
 
-// $font-size-base: 14px; // Declared in normalize/variables
 $general-font: 'Roboto' ;
 $font-size-header: 16px;
 $font-size-btn: 18px;
@@ -19,6 +17,8 @@ $black: #191919 !default;
 $white: #fff !default;
 $yell: yellow !default;
 
+$font-1: #777777 !default;
+
 $grey-1: #f5f5f5 !default; 
 $grey-2: #e3e3e3 !default; 
 $grey-3: #bababa !default; 
@@ -30,6 +30,9 @@ $grey-7: #9c9c9c !default;
 $grey-8: #f4f4f1 !default; 
 $grey-9: #eaeae0 !default;
 $grey-10: #f2f2f2 !default;
+$grey-11: #f7f7f7 !default;
+$grey-12: #f1f1f1 !default;
+$grey-13: #f9f9f9 !default;
 
 $orange: #f58220 !default;
 $orange-light: #ffa200 !default;
@@ -48,11 +51,16 @@ $skyblue: #80bfca !default;
 $lightblue: #f1f3f3 !default;
 $blue-dark: #2525a8 !default;
 
+$gold-1: #fed136 !default;
+
 // BUTTONS vars
 $padding-v-btn: 12px;
 $padding-h-btn: 19px;
 $border-radius-btn: 3px;
 
+//fonts
+$general-font: 'Roboto';
+$second-font: 'Indie Flower', cursive;
 
 
 

@@ -1,5 +1,5 @@
 .about {
-  background-color: white;
+  background-color: $white;
   margin: 0 auto;
   height: 1700px;
   width: 1400px;
@@ -14,7 +14,7 @@
     content: "";
     position: absolute;
     height: 980px;
-    border: 1px solid green;
+    border: 1px solid $grey-12;
     top: 435px;
   }
 
@@ -23,11 +23,13 @@
 
     .about__text-para {
       padding: 5px 0;
-      font-family: 'Indie Flower', cursive;
+      font-family: $second-font;
+      color: $font-1;
     }
 
     .about__text-para--large {
-      font-family: 'Roboto';
+      font-family: $general-font;
+      color: $black;
       font-size: 40px;
       font-weight: bold;
     }
@@ -76,7 +78,8 @@
 
     .about_date-text-para {
       padding: 5px 0;
-      font-family: 'Roboto';
+      font-family: $general-font;
+      color: $font-1;
       font-size: 14px;
       width: 70%;
     }
@@ -84,6 +87,7 @@
     .about_date-text-para--large {
       font-size: 20px;
       font-weight: bold;
+      color: $black;
     }
   }
 
@@ -97,17 +101,25 @@
     height: 180px;
     width: 180px;
     border-radius: 50%;
-    background-color: green;
+    background-color: $gold-1;
     border-style: solid;
-    border-width: 5px;
-    border-color: red;
+    border-width: 6px;
+    border-color: $grey-12;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
+
+    .about_date-circle-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
 
     .about_date-text-center {
-      color: white;
+      color: $white;
       font-size: 18px;
       padding: 3px 0;
     }
