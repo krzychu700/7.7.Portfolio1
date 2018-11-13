@@ -486,6 +486,19 @@ body {
   z-index: 2;
 }
 
+.menu-container .top-menu .burger {
+  cursor: pointer;
+}
+
+.menu-container .top-menu .burger .fas {
+  display: none;
+  color: #fff;
+}
+
+.menu-container .top-menu .burger i.show {
+  display: none;
+}
+
 .menu-container .top-menu .top-menu__nav {
   display: -ms-flexbox;
   display: flex;
@@ -1267,22 +1280,44 @@ footer .footer__container .footer__ico:hover {
   .menu-container .top-menu {
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
+    -ms-flex-align: normal;
+        align-items: normal;
     height: auto;
   }
-  .menu-container .top-menu .top-menu__logo {
-    margin: 0;
+  .menu-container .top-menu .top-menu_head {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .menu-container .top-menu .top-menu_head .top-menu__logo {
+    margin: 5px 20px;
     height: 90px;
+  }
+  .menu-container .top-menu .top-menu_head .burger {
+    margin: 5px 20px;
+  }
+  .menu-container .top-menu .top-menu_head .burger i.show {
+    display: block;
   }
   .menu-container .top-menu .top-menu__nav {
     margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    display: none;
   }
   .menu-container .top-menu .top-menu__nav .top-menu__list {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
+  }
+  .menu-container .top-menu .show {
+    display: -ms-flexbox;
+    display: flex;
   }
   .menu-container .menu-text-area {
     -ms-flex-pack: start;
@@ -1380,7 +1415,8 @@ footer .footer__container .footer__ico:hover {
     -ms-flex-align: center;
         align-items: center;
   }
-  .contact .contact__form .contact__form-data, .contact .contact__form .contact__form-message {
+  .contact .contact__form .contact__form-data,
+  .contact .contact__form .contact__form-message {
     margin: 0;
     width: 370px;
   }

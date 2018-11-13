@@ -31,6 +31,19 @@
       z-index: 2;
     }
 
+    .burger {
+      cursor: pointer;
+
+      .fas {
+        display: none;
+        color: $white;
+      }
+
+      i.show {
+        display: none;
+      }
+    }
+
     .top-menu__nav {
       display: flex;
       float: left;

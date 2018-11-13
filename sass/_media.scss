@@ -167,154 +167,175 @@
 
     .top-menu {
       flex-direction: column;
-      align-items: center;
+      align-items: normal;
       height: auto;
 
+      .top-menu_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
       .top-menu__logo {
-        margin: 0;
+        margin: 5px 20px;
         height: 90px;
       }
 
-      .top-menu__nav {
-        margin: 0;
+      .burger {
+        margin: 5px 20px;
 
-        .top-menu__list {
-          flex-direction: column;
-          align-items: center;
+        i.show {
+          display: block;
         }
       }
     }
 
-    .menu-text-area {
-      justify-content: flex-start;
-
-      .menu-text__para {
-        font-size: 30px;
-      }
-
-      .menu-text__para--large {
-        font-size: 40px;
-      }
-    }
-  }
-
-  .services {
-    width: 410px;
-    height: 1030px;
-
-    .services__text {
-      margin: 30px 0;
-    }
-
-    .services__icons {
-      flex-direction: column;
-    }
-  }
-
-  .portfolio {
-    width: 410px;
-    height: 2880px;
-    max-height: 2880px;
-
-    .portfolio__text {
-      margin: 30px 0;
-    }
-
-    .portfolio__examples { 
-      justify-content: space-around;
-      flex-direction: column;
+    .top-menu__nav {
       margin: 0;
-    }
-  }
-
-  .about {
-    width: 410px;
-    height: 1300px;
-
-    &::before {
+      align-self: center;
       display: none;
-    }
 
-    .about__text {
-      margin: 30px 0;
-    }
-
-    .about_date {
-      width: 96%;
-    }
-
-    .about_date-text {
-      width: 65%;
-      padding: 0 10px;
-
-      .about_date-text-para {
-        width: 100%;
+      .top-menu__list {
+        flex-direction: column;
+        align-items: center;
       }
     }
 
-    .about_date--left {
-      margin: 2% 0;
-    }
-
-    .about_date--right {
-      margin: 2% 0;
-    }
-
-    .about_date-circle {
-      height: 120px;
-      width: 120px;
+    .show {
+      display: flex;
     }
   }
 
-  .team {
-    width: 410px;
-    height: 1480px;
+  .menu-text-area {
+    justify-content: flex-start;
 
-    .team__container {
-      flex-direction: column;
+    .menu-text__para {
+      font-size: 30px;
     }
 
-    .team__article {
-      margin: 10px 10px;
-      width: auto;
+    .menu-text__para--large {
+      font-size: 40px;
+    }
+  }
+}
+
+.services {
+  width: 410px;
+  height: 1030px;
+
+  .services__text {
+    margin: 30px 0;
+  }
+
+  .services__icons {
+    flex-direction: column;
+  }
+}
+
+.portfolio {
+  width: 410px;
+  height: 2880px;
+  max-height: 2880px;
+
+  .portfolio__text {
+    margin: 30px 0;
+  }
+
+  .portfolio__examples {
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.about {
+  width: 410px;
+  height: 1300px;
+
+  &::before {
+    display: none;
+  }
+
+  .about__text {
+    margin: 30px 0;
+  }
+
+  .about_date {
+    width: 96%;
+  }
+
+  .about_date-text {
+    width: 65%;
+    padding: 0 10px;
+
+    .about_date-text-para {
+      width: 100%;
     }
   }
 
-  .logos {
-    width: 410px;
-    height: 210px;
-    display: flex;
+  .about_date--left {
+    margin: 2% 0;
+  }
+
+  .about_date--right {
+    margin: 2% 0;
+  }
+
+  .about_date-circle {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+.team {
+  width: 410px;
+  height: 1480px;
+
+  .team__container {
     flex-direction: column;
   }
 
-  .contact {
-    width: 410px;
-    height: 810px;
+  .team__article {
+    margin: 10px 10px;
+    width: auto;
+  }
+}
 
-    .contact__form {
-      flex-direction: column;
-      align-items: center;
+.logos {
+  width: 410px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+}
 
-      .contact__form-data, .contact__form-message {
-        margin: 0;
-        width: 370px;
-      }
+.contact {
+  width: 410px;
+  height: 810px;
+
+  .contact__form {
+    flex-direction: column;
+    align-items: center;
+
+    .contact__form-data,
+    .contact__form-message {
+      margin: 0;
+      width: 370px;
     }
   }
+}
 
-  footer {
+footer {
+  width: 410px;
+  height: 135px;
+
+  .footer__container {
     width: 410px;
-    height: 135px;
+    display: flex;
+    flex-direction: column;
 
-    .footer__container {
-      width: 410px;
-      display: flex;
-      flex-direction: column;
-
-      .footer__text {
-        width: auto;
-        margin: 20px 0;
-      }
+    .footer__text {
+      width: auto;
+      margin: 20px 0;
     }
   }
+}
 }
