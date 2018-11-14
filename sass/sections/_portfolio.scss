@@ -42,6 +42,9 @@
     height: 392px;
     width: 290px;
     background-color: $white;
+    opacity: 0;
+    animation: fadein 2s;
+    transition: opacity 2s;
 
     .portfolio__box-image {
       width: 100%;
@@ -70,5 +73,15 @@
         color: $black;
       }
     }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

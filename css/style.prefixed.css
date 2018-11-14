@@ -694,6 +694,9 @@ body {
   height: 392px;
   width: 290px;
   background-color: #fff;
+  opacity: 0;
+  animation: fadein 2s;
+  transition: opacity 2s;
 }
 
 .portfolio .portfolio__box .portfolio__box-image {
@@ -725,6 +728,15 @@ body {
   color: #191919;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .about {
   background-color: #fff;
   margin: 0 auto;
@@ -742,12 +754,16 @@ body {
   position: relative;
 }
 
-.about::before {
-  content: "";
+.about .about__line {
   position: absolute;
-  height: 980px;
+  height: 0;
+  max-height: 1080px;
   border: 1px solid #f1f1f1;
   top: 435px;
+  opacity: 0;
+  animation: fadein 2s;
+  transition: opacity 2s;
+  transition: 1s;
 }
 
 .about .about__text {
@@ -779,6 +795,9 @@ body {
       align-items: center;
   -ms-flex-pack: end;
       justify-content: flex-end;
+  opacity: 0;
+  animation: fadein 2s;
+  transition: opacity 2s;
 }
 
 .about .about_date--left {
@@ -876,6 +895,15 @@ body {
   color: #fff;
   font-size: 18px;
   padding: 3px 0;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .team {

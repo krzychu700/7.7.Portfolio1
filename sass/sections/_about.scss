@@ -10,12 +10,16 @@
   text-align: center;
   position: relative;
 
-  &::before {
-    content: "";
+  .about__line{
     position: absolute;
-    height: 980px;
+    height: 0;
+    max-height: 1080px;
     border: 1px solid $grey-12;
     top: 435px;
+    opacity: 0;
+    animation: fadein 2s;
+    transition: opacity 2s;
+    transition: 1s;
   }
 
   .about__text {
@@ -44,6 +48,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    opacity: 0;
+    animation: fadein 2s;
+    transition: opacity 2s;
   }
 
   .about_date--left {
@@ -123,5 +130,15 @@
       font-size: 18px;
       padding: 3px 0;
     }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
