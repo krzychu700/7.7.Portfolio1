@@ -13,3 +13,21 @@ body {
   width: 1400px;
   margin: 0 auto;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 410px;
+  }
+}

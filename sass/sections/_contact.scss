@@ -10,44 +10,88 @@
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+}
 
-  .contact_text {
-    color: white;
-    margin-top: 85px;
+.contact__text {
+  color: white;
+  margin-top: 85px;
+}
 
-    .contact__text-para {
-      padding: 10px 0;
-      font-size: 28px;
-      font-family: $second-font;
-    }
+.contact__text-para {
+  padding: 10px 0;
+  font-size: 28px;
+  font-family: $second-font;
+  color: $white;
+}
 
-    .contact__text-para--large {
-      font-size: 45px;
-      font-weight: bold;
-      font-family: $general-font;
-      color: $white;
-    }
+.contact__text-para--large {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: $general-font;
+  color: $white;
+}
+
+.contact__form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.contact__form-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 30px;
+  width: 460px;
+}
+
+.contact__form-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 460px;
+}
+
+@media (max-width: 1024px) {
+
+  .contact {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .contact {
+    width: 750px;
+    height: 810px;
   }
 
   .contact__form {
-    display: flex;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .contact__form-data {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      margin-right: 30px;
-      width: 460px;
-    }
+  .contact__form-data {
+    margin: 0;
+  }
+}
 
-    .contact__form-message {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      width: 460px;
-    }
+@media (max-width: 425px) {
+
+  .contact {
+    width: 410px;
+    height: 810px;
+  }
+
+  .contact__form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__form-data,
+  .contact__form-message {
+    margin: 0;
+    width: 370px;
   }
 }

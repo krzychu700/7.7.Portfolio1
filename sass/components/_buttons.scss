@@ -31,49 +31,17 @@ $button-size: 40px;
     font-size: 20px;
 }
 
-.btn__orange {
+.btn__gold {
     background-color: $gold-1;
 }
-
 
 .btn:hover,
 .btn:active {
     color: $white;
-    background-color: $grey-3;
+    background-color: $orange-light;
     outline: none;
 }
 
 .btn--close {
     background-color: inherit;
-}
-
-.btn__orange:hover,
-.btn__orange:active {
-    background-color: $orange-light;
-}
-
-.btn--disabled,
-.btn--disabled:hover,
-    {
-    background-color: $grey-2; 
-    cursor: not-allowed;
-}
-
-.btn_save {
-    width: 100px;
-}
-
-.btn__right {
-   margin-right: 18px;
-}
-
-.btn__disable {
-    background-color: $grey-10;
-    cursor: none;
-    width: 15%;
-    margin-left: 18px;
-}
-
-.btn__disable:hover {
-    background-color:  $grey-10;
 }

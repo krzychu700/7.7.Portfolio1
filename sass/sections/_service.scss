@@ -8,64 +8,94 @@
   justify-content: flex-end;
   align-items: center;
   color: $black;
+}
+
+.services__text {
+  margin-bottom: 70px;
+}
+
+.services__text-para {
+  font-family: $second-font;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: $font-1;
+}
+
+.services__text-para--large {
+  font-family: $general-font;
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: $black;
+}
+
+.services__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__icons-elem {
+  max-width: 320px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.services__icons-icon {
+  font-size: 40px;
+  color: $gold-1;
+  border: 2px solid $gold-1;
+  width: 76px;
+  height: 76px;
+  border-radius: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__icons-para {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.services__icons-text {
+  text-align: center;
+  margin-bottom: 50px;
+  color: $font-1;
+}
+
+@media (max-width: 1024px) {
+
+  .services {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .services {
+    width: 750px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .services {
+    width: 410px;
+    height: 1030px;
+  }
 
   .services__text {
-    margin-bottom: 70px;
-
-    .services__text-para {
-      font-family: $second-font;
-      font-size: 30px;
-      display: flex;
-      justify-content: center;
-      color: $font-1;
-    }
-
-    .services__text-para--large {
-      font-family: $general-font;
-      font-size: 40px;
-      margin-bottom: 5px;
-      color: $black;
-    }
+    margin: 30px 0;
   }
 
   .services__icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .services__icons-elem {
-    max-width: 320px;
-    padding: 0 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    position: relative;
-
-    .services__icons-icon {
-      font-size: 40px;
-      color: $gold-1;
-      border: 2px solid $gold-1;
-      width: 76px;
-      height: 76px;
-      border-radius: 100%;
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .services__icons-para {
-      margin: 10px 0;
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .services__icons-text {
-      text-align: center;
-      margin-bottom: 50px;
-      color: $font-1;
-    }
   }
 }
